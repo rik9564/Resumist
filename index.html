@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3e%3cdefs%3e%3clinearGradient id='r-grad' x1='0' y1='0' x2='1' y2='1'%3e%3cstop offset='0%25' stop-color='%2322D3EE' /%3e%3cstop offset='100%25' stop-color='%2306B6D4' /%3e%3c/linearGradient%3e%3c/defs%3e%3cpath d='M23 18V46' stroke='url(%23r-grad)' stroke-width='5' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3e%3cpath d='M23 26H33C35.2091 26 37 27.7909 37 30C37 32.2091 35.2091 34 33 34H23' stroke='url(%23r-grad)' stroke-width='5' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3e%3cpath d='M31 34L41 46' stroke='url(%23r-grad)' stroke-width='5' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3e%3c/svg%3e" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resumist | Instant AI Resume Analysis & Enhancement</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/11.2.10/motion.umd.min.js"></script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "clsx": "https://aistudiocdn.com/clsx@^2.1.1",
+    "tailwind-merge": "https://aistudiocdn.com/tailwind-merge@^3.3.1",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.25.0",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.24",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.545.0"
+  }
+}
+</script>
+<style>
+    /* Custom scrollbar for a cleaner look across the app */
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #475569; /* slate-600 */
+      border-radius: 3px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+      background: #64748b; /* slate-500 */
+    }
+    /* For Firefox */
+    .custom-scrollbar {
+      scrollbar-width: thin;
+      scrollbar-color: #475569 transparent;
+    }
+  </style>
+</head>
+  <body class="bg-black overflow-hidden">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
